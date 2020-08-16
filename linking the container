@@ -12,4 +12,6 @@ command to follow:
     docker run --name rohitkumar --link Rohit:mysql -p 8085:80 wordpress  ....it will link the wordpress container with mysql(as a database)
    docker ps -a
 
+ docker port b647   it will give the port of specific container
+output of above command :    80/tcp -> 0.0.0.0:8085
 
