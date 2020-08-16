@@ -1,1 +1,15 @@
 https://www.youtube.com/watch?v=HY3WDz6j_hU
+
+
+command to follow:   
+
+ docker pull mysql
+   docker run --name Rohit -e MYSQL_ROOT_PASSWORD=Rohit123  -d mysql:tag .....to launch mysql container with password  Rohit123  .... -e for enviroment setting
+    docker images
+    docker ps -a
+    docker pull wordpress
+    
+    docker run --name rohitkumar --link Rohit:mysql -p 8085:80 wordpress  ....it will link the wordpress container with mysql(as a database)
+   docker ps -a
+
+
